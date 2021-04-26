@@ -19,7 +19,7 @@ npm i
 npm run dev
 ```
 
-### Backend Setup
+## Backend Setup
 
 ```
 cd backend
@@ -27,7 +27,7 @@ npm i
 npm start
 ```
 
-### Testing
+## Testing
 
 ```
 cd frontend
