@@ -1,0 +1,18 @@
+
+
+#errorPage {
+  @include flexbox(center, center, column);
+  height: 60vh;
+  width: 100%;
+  img {
+    width: 10rem;
+    filter: contrast(0.2);
+  }
+  h1 {
+    margin-top: 2rem;
+  }
+  p {
+    margin-top: 3rem;
+    color: $gray;
+  }
+}

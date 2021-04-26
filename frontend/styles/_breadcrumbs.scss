@@ -1,0 +1,22 @@
+
+
+#breadcrumbs {
+  @include flexbox(flex-start, center, row);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+>div{
+  flex-direction: row;
+  align-items: center;
+}
+  p {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    font-size: 0.87rem;
+    word-break: keep-all;
+    color: $gray;
+  }
+  p:last-child {
+    margin-left: 0.25rem;
+    font-weight: bold;
+  }
+}

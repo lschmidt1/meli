@@ -1,0 +1,11 @@
+
+
+#productsList {
+  @include flexbox(center, center, column);
+    margin-bottom: 2rem;
+    height: 100%;
+    ul{
+      @include flexbox(center, center, column);
+
+    }
+}
