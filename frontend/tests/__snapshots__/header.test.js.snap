@@ -10,6 +10,7 @@ Object {
       >
         <img
           alt="Mercado Libre"
+          role="logo"
           src="/Logo_ML@2x.png"
         />
         <form
@@ -41,6 +42,7 @@ Object {
     >
       <img
         alt="Mercado Libre"
+        role="logo"
         src="/Logo_ML@2x.png"
       />
       <form

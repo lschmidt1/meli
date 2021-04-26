@@ -53,4 +53,11 @@ describe("<Header />", () => {
     fireEvent.submit(submitForm);
     /* expect(window.location.pathname).toEqual("/items?search=ipad"); */
   });
+
+  test("pressing logo should redirect home", () => {
+    render(<Header></Header>);
+    const logo = screen.getByRole("logo");
+    fireEvent.click(logo);
+    expect(window.location.pathname).toEqual("/");
+  });
 });

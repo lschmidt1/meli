@@ -17,9 +17,17 @@ function Header() {
     }
   }
 
+  function redirectHome(e) {
+    e.preventDefault()
+    if (router) {
+      router.push(`/`);
+      setSearchValue("")
+    }
+  }
+
   return (
     <div id="header">
-      <img src="/Logo_ML@2x.png" alt="Mercado Libre" />
+      <img role="logo" onClick={(e) => redirectHome(e)} src="/Logo_ML@2x.png" alt="Mercado Libre" />
       <form role="submitForm" onSubmit={(e) => handleSearchProducts(e)}>
         <input
           data-testid="searchInput"
