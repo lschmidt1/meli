@@ -18,7 +18,7 @@ describe("<ProductDetail />", () => {
     });
   });
 
-  test("renders a list when receiving product detail as initialState", () => {
+  test("renders product detail container when receiving data as initialState", () => {
     const initialState = {
       productDetail: product,
     };
@@ -26,7 +26,7 @@ describe("<ProductDetail />", () => {
     expect(screen.getByRole("productDetail")).toBeInTheDocument();
   });
 
-  test("calls getProducts API when receiving search param from URL", () => {
+  test("calls getProductDetail API when receiving search param from URL", () => {
     render(<ProductDetail />);
     const push = jest.fn();
     const fakeResp = product;
