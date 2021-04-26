@@ -20,7 +20,7 @@ const ProductDetail = () => {
   );
   const isError = useSelector((state) => state.productsReducer.productsError);
 
-  const { id } = router.query;
+  const { id } = router ? router.query : "";
 
   useEffect(() => {
     if (id) {
@@ -40,7 +40,7 @@ const ProductDetail = () => {
   }
   if (product) {
     return (
-      <div id="productDetail">
+      <div id="productDetail" role="productDetail">
         <Breadcrumbs categories={categoriesList} />
         <div className="productBody">
           <img
