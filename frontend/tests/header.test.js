@@ -56,6 +56,7 @@ describe("<Header />", () => {
 
   test("pressing logo should redirect home", () => {
     render(<Header></Header>);
+    global.window = { location: { pathname: "/items" } };
     const logo = screen.getByRole("logo");
     fireEvent.click(logo);
     expect(window.location.pathname).toEqual("/");
